@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define pb push_back
+ 
+int main(){
+    
+   int t; cin>>t;
+   
+   while(t--){
+       string str;
+   cin>>str;
+   
+//   int str1 = stoi(str[0]); // stoi works for string not character 
+//   int str2 = stoi(str[1]);
+//   int str3 = stoi(str[2]);
+//   int str4 = stoi(str[3]);
+//   int str5 = stoi(str[4]);
+//   int str6 = stoi(str[5]); 
+ 
+    int str1 = str[0]-'0';
+    int str2 = str[1]-'0';
+    int str3 = str[2]-'0';
+    int str4 = str[3]-'0';
+    int str5 = str[4]-'0';
+    int str6 = str[5]-'0';
+ 
+   
+   if(str1+str2+str3 == str4+str5+str6) cout<<"YES"<<endl;
+   else cout<<"NO"<<endl;
+   
+   
+   
+   
+   }
+}
