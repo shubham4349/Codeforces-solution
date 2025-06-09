@@ -1,26 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define pb push_back
-#define in insert
  
 int main(){
-    int t;
-    cin>>t;
+    
+    int t; cin>>t;
     while(t--){
         int a,b,c;
-        cin>>a>>b>>c;
-        
-        vector<int> temp;
-        temp.pb(a);
-        temp.pb(b);
-        temp.pb(c);
-        sort(temp.begin(), temp.end());
-        cout<<temp[1]<<endl;
-        // set<int> temp;
-        // set.in(a);
-        // set.in(b);
-        // set.in(c);
-        
+    cin>>a>>b>>c;
+    
+    // case:1 -> when A is medium
+    if(a>b and a<c or a>c and a<b) cout<<a<<endl;
+    // case:2-> when B is medium
+    else if(b>a and b<c or b>c and b<a) cout<<b<<endl;
+    // case:3-> when C is med
+    else cout<<c<<endl;
     }
     
 }
