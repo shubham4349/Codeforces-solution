@@ -1,0 +1,1 @@
+#include <bits/stdc++.h>using namespace std; int main() {          int t;     cin>>t;     string s="codeforces";     set<char> set1(s.begin(), s.end());     while(t--){         char ch;         cin>>ch;         if(set1.count(ch)){             cout<<"YES"<<endl;         }else cout<<"NO"<<endl;              }      }
